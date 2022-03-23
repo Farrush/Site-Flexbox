@@ -1,77 +1,79 @@
-body {
+body{
     margin: 0;
     padding: 0;
 }
 
-header {
+header{
     display:flex;
     justify-content:center;
     height:120px;
 }
 
-.container {
+.container{
     display:flex;
     justify-content:space-between;
     width:990px;
 }
 
-.logo {
+.logo{
     display:flex;
     align-items:center;
 }
 
-.menu {
+.menu{
     display:flex;
     align-items:center;    
 }
 
-nav ul, nav li {
+nav ul, nav li{
     display:flex;
     list-style-type:none;
-/*    margin:0;
-    padding:0; */
+    margin:0;
+    padding:0;
 }
 
-nav a {
+nav a{
     display:block;
     text-decoration: none;
     padding:15px;
     color:rgb(88, 88, 88);
     font-family:Arial, Helvetica, sans-serif;
 }
-nav .active a, nav a:hover {
+nav .active a, nav a:hover{
     background-color:#39aee1;
     color:#FFFFFF;
 }
 
-#banner {
+#banner{
+    font-family:Arial, Helvetica, sans-serif;
     background-image: url(../images/img1.jpeg);
     background-position: center;
     background-size: cover;
     height:800px;
+    display:flex;
+    justify-content:center;
 }
-.banner_headline {
+.banner_headline{
     display:flex;
     flex-direction:column;
     justify-content:center;
 }
 
-.banner_options {
+.banner_options{
     height:210px;
+    display:flex;
 }
 .banner_headline h1{
-    color:#FfFFFf;
+    color:#ffffff;
     font-size:70px;
     text-shadow: 0px 1px 0px #555555;
     max-width:350px;
-    font-family:Arial, Helvetica, sans-serif;
 }
 .banner_headline h2{
-    color:#FfFFFf;
+    color:#ffffff;
     font-size:20px;
     text-shadow: 0px 1px 0px #555555;
-    max-width:350px;
-    font-family:Arial, Helvetica, sans-serif;    
+    max-width:350px;  
 }
 
 .banner1,.banner2,.banner3{
@@ -81,13 +83,96 @@ nav .active a, nav a:hover {
 }
 
 .banner1{
-    background-color:rgb(46, 137, 255)
+    background-color:#44a8ff;
 }
 
 .banner2{
-    background-color:rgb(46, 102, 255)
+    background-color:#279aff;
 }
 
 .banner3{
-    background-color:rgb(46, 84, 255)
+    background-color:#0d89f5;
+}
+
+.banner_title{
+    font-size:21px;
+}
+
+.banner_desc{
+    font-size:12px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.banner_options a{
+    text-decoration:none;
+    border:#FFFFFF solid 1px;
+    color:#FFFFFF;
+    border-radius:3px;
+    padding:5px;
+    font-size:12px;
+}
+
+.column{
+    flex-direction:column;
+}
+
+#geral{
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content:center;
+}
+.widget_title{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.widget_title_text{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#000000;
+    font-size:21px;
+    font-weight:bold;
+}
+.widget_title_bar{
+    width:50px;
+    height:5px;
+    background-color:#44a8ff;
+    margin-top:10px;
+}
+
+#rodape{
+    font-family:Arial, Helvetica, sans-serif;
+    Background-color:#444444;
+    display:flex;
+    height:40px;
+    line-height:40px;
+    color:#EEEEEE;
+    font-size:12px;
+    margin-top:30px;
+}
+
+@media (max-width:800px){
+/*colocar as alterações*/
+.banner_headline h1{
+    font-size:55px;
+    padding:20px;
+}
+
+.banner_headline h2{
+    font-size:17px;
+}
+
+.banner_options{
+    height:auto;
+    flex-direction:column;
+}
+
+#geral{
+    padding:20px;
+}
+
+#rodape{
+    flex-direction:column;
+    padding:20px;
+}
+
 }
