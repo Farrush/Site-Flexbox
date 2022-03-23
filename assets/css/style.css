@@ -148,6 +148,7 @@ nav .active a, nav a:hover{
     color:#EEEEEE;
     font-size:12px;
     margin-top:30px;
+    padding-left:30px;
 }
 
 @media (max-width:800px){
